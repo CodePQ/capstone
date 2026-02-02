@@ -12,7 +12,7 @@ import re
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 header_card = dbc.Card([
-    dbc.CardHeader("Market Data Analyzer"),
+    dbc.CardHeader("Market Data Replay"),
 ])
 
 text_1 = dbc.Card([dbc.CardHeader("Market Data"),
@@ -160,7 +160,7 @@ def create_figure(nbbo, orders):
                          step="minute", stepmode="backward"),
                     dict(step="all"),
                 ],
-                x=0.04,
+                x=0.03,
                 y=0.99,
                 xanchor="left",
                 yanchor="top",
